@@ -151,8 +151,8 @@
       }
 
       .hero .highlights {
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(4, auto);
         justify-content: center;
         gap: 0.8rem 1.2rem;
         max-width: 600px;
@@ -345,6 +345,9 @@
         }
         .info-grid {
           grid-template-columns: 1fr;
+        }
+        .hero .highlights {
+          grid-template-columns: repeat(2, auto);
         }
       }
     </style>
